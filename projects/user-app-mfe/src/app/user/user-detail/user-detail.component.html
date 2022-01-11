@@ -1,0 +1,50 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <a mat-icon-button [routerLink]="['../']" routerLinkActive="router-link-active">
+      <mat-icon>arrow_back</mat-icon>
+    </a>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div fxLayout="row" fxLayoutAlign="center center">
+  <div fxFlex fxFlex.gt-sm="50%">
+    <div fxLayout="column" fxLayoutGap="24px">
+      <mat-card class="user-card" *ngIf="user">
+        <mat-card-header>
+          <div
+            mat-card-avatar
+            class="example-header-image"
+            [ngStyle]="{
+              'background-image': 'url(assets/pictures/' + user.picture + ')',
+              'background-size': 'cover'
+            }"
+          >
+            <!-- <img [src]="'assets/pictures/' + user.picture" alt="user avatar" /> -->
+          </div>
+
+          <mat-card-title>{{ user.name | uppercase  }}</mat-card-title>
+          <mat-card-subtitle>{{ user.email }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-list dense>
+            <mat-list-item>
+              <h3 matLine>Name</h3>
+              <p matLine>{{ user.name | uppercase }}</p>
+            </mat-list-item>
+            <mat-list-item>
+              <h3 matLine>Gender</h3>
+              <p matLine>{{ user.gender | uppercase }}</p>
+            </mat-list-item>
+            <mat-list-item>
+              <h3 matLine>E-mail</h3>
+              <p matLine>{{ user.email }}</p>
+            </mat-list-item>
+            <mat-list-item>
+              <h3 matLine>Birth date</h3>
+              <p matLine>{{ user.birthdate | date: 'dd MMM yyyy' }}</p>
+            </mat-list-item>
+          </mat-list>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

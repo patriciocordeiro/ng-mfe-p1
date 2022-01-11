@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <div fxFlex fxLayout="row" fxLayoutAlign="space-between center">
+      <div fxFlex>
+        <span class="mat-title">Micro Frontend using angular library: Part 1</span>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="8px">
+        <a mat-button [routerLink]="['./home']" routerLinkActive="router-link-active"> Home </a>
+        <a mat-button [routerLink]="['./user']" routerLinkActive="router-link-active"> User </a>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

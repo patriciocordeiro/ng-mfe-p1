@@ -1,0 +1,50 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "paths": {
+      "auth-app-mfe-lib": [
+        "dist/auth-app-mfe-lib/auth-app-mfe-lib",
+        "dist/auth-app-mfe-lib",
+        "dist/auth-app-mfe-lib/auth-app-mfe-lib",
+        "dist/auth-app-mfe-lib"
+      ],
+      "home-app-mfe-lib": [
+        "dist/home-app-mfe-lib/home-app-mfe-lib",
+        "dist/home-app-mfe-lib"
+      ],
+      "login-app-mfe": [
+        "dist/login-app-mfe/login-app-mfe",
+        "dist/login-app-mfe"
+      ],
+      "user-app-mfe-lib": [
+        "dist/user-app-mfe-lib/user-app-mfe-lib",
+        "dist/user-app-mfe-lib"
+      ]
+    },
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2017",
+    "module": "es2020",
+    "lib": [
+      "es2018",
+      "dom"
+    ]
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

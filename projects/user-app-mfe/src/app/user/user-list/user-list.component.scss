@@ -1,0 +1,12 @@
+:host {
+  .main-container{
+    margin-top: 36px;
+  }
+  .user-list-item {
+    cursor: pointer;
+    outline: none;
+    &:hover{
+      background-color: aliceblue;
+    }
+  }
+}
