@@ -1,22 +1,26 @@
 <div class="main-container" fxLayout="row" fxLayoutAlign="center center">
   <div fxFlex fxFlex.gt-sm="50%">
-    <div fxLayout="column">
-      <span class="mat-title">Users</span>
-      <mat-divider></mat-divider>
-      <mat-list>
-        <mat-list-item class="user-list-item"
-          [routerLink]="['./' + user.id]"
-          routerLinkActive="router-link-active"
-          *ngFor="let user of userList"
-        >
-          <img matListAvatar [src]="'assets/pictures/' + user.picture" [alt]="user.name" />
-          <h3 matLine>{{ user.name | uppercase }}</h3>
-          <p matLine>{{ user.email }}</p>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Users</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-list>
+          <mat-list-item
+            class="user-list-item"
+            [routerLink]="['./' + user.id]"
+            routerLinkActive="router-link-active"
+            *ngFor="let user of userList"
+          >
+            <img matListAvatar [src]="'assets/pictures/' + user.picture" [alt]="user.name" />
+            <h3 matLine>{{ user.name | uppercase }}</h3>
+            <p matLine>{{ user.email }}</p>
 
-          <mat-divider></mat-divider>
-          <mat-icon class="mat-18">chevron_right</mat-icon>
-        </mat-list-item>
-      </mat-list>
-    </div>
+            <mat-divider></mat-divider>
+            <mat-icon class="mat-18">chevron_right</mat-icon>
+          </mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
   </div>
 </div>
