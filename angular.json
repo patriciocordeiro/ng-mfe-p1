@@ -299,7 +299,15 @@
             "polyfills": "projects/home-app-mfe/src/polyfills.ts",
             "tsConfig": "projects/home-app-mfe/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["projects/home-app-mfe/src/favicon.ico", "projects/home-app-mfe/src/assets"],
+            "assets": [
+              "projects/home-app-mfe/src/favicon.ico",
+              "projects/home-app-mfe/src/assets",
+              {
+                "glob": "**/*",
+                "input": "projects/assets/",
+                "output": "./assets/"
+              }
+            ],
             "styles": [
               "projects/home-app-mfe/src/styles.scss",
               {
