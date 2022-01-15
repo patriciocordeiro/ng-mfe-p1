@@ -9,12 +9,12 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('../../../../dist/home-app-mfe-lib').then(m => m.HomeModule)
+    loadChildren: () => import('../assets/home-app-mfe-lib.umd' as any).then(m => m.HomeModule)
 
   },
   {
     path: 'user',
-    loadChildren: () => import('../../../../dist/user-app-mfe-lib').then(m => m.UserModule)
+    loadChildren: () => import('../assets/user-app-mfe-lib.umd' as any).then(m => m.UserModule)
   }
 ];
 

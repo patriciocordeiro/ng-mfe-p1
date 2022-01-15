@@ -64,7 +64,7 @@
               "projects/user-app-mfe/src/assets/",
               {
                 "glob": "**/*",
-                "input": "projects/shell-app/src/assets/",
+                "input": "projects/assets/",
                 "output": "./assets/"
               }
             ],
@@ -195,7 +195,15 @@
             "polyfills": "projects/shell-app/src/polyfills.ts",
             "tsConfig": "projects/shell-app/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["projects/shell-app/src/favicon.ico", "projects/shell-app/src/assets"],
+            "assets": [
+              "projects/shell-app/src/favicon.ico",
+              "projects/shell-app/src/assets",
+              {
+                "glob": "**/*",
+                "input": "projects/assets/",
+                "output": "./assets/"
+              }
+            ],
             "styles": ["projects/shell-app/src/styles.scss"],
             "scripts": []
           },

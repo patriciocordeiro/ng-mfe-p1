@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { User } from '../shared/interfaces/user';
-import { UserService } from './../shared/user.service';
+import { UserService } from '../shared/services/user.service';
 
 @Component({
   selector: 'app-user-detail',

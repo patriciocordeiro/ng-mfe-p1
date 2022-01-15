@@ -4,8 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build:home-app": "ng build home-app-mfe-lib",
-    "build:user-app": "ng build user-app-mfe-lib",
+    "build:home-app-lib": "ng build home-app-mfe-lib && cp ./dist/home-app-mfe-lib/bundles/home-app-mfe-lib.umd.js ./projects/shell-app/src/assets/",
+    "build:user-app-lib": "ng build user-app-mfe-lib  && cp ./dist/user-app-mfe-lib/bundles/user-app-mfe-lib.umd.js ./projects/shell-app/src/assets/",
     "serve:home-app": "ng serve home-app-mfe --o",
     "serve:user-app": "ng serve user-app-mfe --o",
     "serve:shell-app": "ng serve shell-app --o",
